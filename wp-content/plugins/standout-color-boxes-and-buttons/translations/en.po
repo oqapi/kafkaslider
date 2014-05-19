@@ -1,0 +1,257 @@
+# Copyright (C) 2014 
+# This file is distributed under the same license as the  package.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/standout-color-boxes-and-"
+"buttons\n"
+"POT-Creation-Date: 2014-04-16 00:07:42+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2014-04-15 20:18-0500\n"
+"Last-Translator: \n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: Poedit 1.6.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
+
+#: scbb.php:44
+msgid "Do not access this file directly."
+msgstr ""
+
+#: scbb.php:92
+msgid "You do not have sufficient permission to access this page"
+msgstr ""
+
+#: scbb.php:105 scbb.php:108
+msgid "Is plugin enabled? Uncheck this to turn it off temporarily."
+msgstr ""
+
+#: scbb.php:105
+msgid "Plugin enabled?"
+msgstr ""
+
+#: scbb.php:109
+msgid "Select the color you would like to use as the default."
+msgstr ""
+
+#: scbb.php:109
+msgid "Default color"
+msgstr ""
+
+#: scbb.php:118
+msgid "Select the built-in color you would like to use as the default."
+msgstr ""
+
+#: scbb.php:119
+msgid "Use a custom color"
+msgstr ""
+
+#: scbb.php:119
+msgid "Select custom color"
+msgstr ""
+
+#: scbb.php:122
+msgid ""
+"Select or enter a custom color to use by default. <strong>This will override "
+"the color selected above. Must be a hex color value such as #EEE or #FFCC00</"
+"strong>"
+msgstr ""
+
+#: scbb.php:123
+msgid "Check this box to use rounded corner CSS."
+msgstr ""
+
+#: scbb.php:123
+msgid "Enabled CSS rounded corners?"
+msgstr ""
+
+#: scbb.php:126
+msgid ""
+"Check this box to use rounded corner CSS. You can override this at the "
+"shortcode level."
+msgstr ""
+
+#: scbb.php:127
+msgid "Check this box to use drop shadow CSS."
+msgstr ""
+
+#: scbb.php:127
+msgid "Enabled CSS drop shadow?"
+msgstr ""
+
+#: scbb.php:130
+msgid ""
+"Check this box to use drop shadow CSS. You can override this at the "
+"shortcode level."
+msgstr ""
+
+#: scbb.php:131
+msgid "Enter default URL to use for color buttons."
+msgstr ""
+
+#: scbb.php:131
+msgid "Default button URL"
+msgstr ""
+
+#: scbb.php:134
+msgid ""
+"Enter default URL to use for color buttons. This URL will be used if you do "
+"not override it at the shortcode level."
+msgstr ""
+
+#: scbb.php:135
+msgid "Check this box to add rel=nofollow to button links."
+msgstr ""
+
+#: scbb.php:135
+msgid "Nofollow button link?"
+msgstr ""
+
+#: scbb.php:138
+msgid ""
+"Check this box to add rel=\"nofollow\" to button links only. You can "
+"override this at the shortcode level."
+msgstr ""
+
+#: scbb.php:139
+msgid "Check this box to open links in a new window (color buttons only)."
+msgstr ""
+
+#: scbb.php:139
+msgid "Open links in new window?"
+msgstr ""
+
+#: scbb.php:142
+msgid ""
+"Check this box to open links in a new window (color buttons only). You can "
+"override this at the shortcode level."
+msgstr ""
+
+#: scbb.php:143
+msgid "Enter custom CSS"
+msgstr ""
+
+#: scbb.php:146
+msgid ""
+"If you use your own custom class names, enter the CSS here. Include the "
+"\"scbb-button\" or \"scbb-content-box\" prefix in your CSS. In the shortcode "
+"or PHP, use the custom class name but DO NOT include the \"scbb-button\" or "
+"\"scbb-content-box\" prefix."
+msgstr ""
+
+#: scbb.php:147
+msgid ""
+"Example: If the custom CSS is <strong>.scbb-content-box-mycustomcolor "
+"{ background-color:#FF9900 }</strong> then the shortcode is <br /"
+"><strong>[color-box color=\"mycustomcolor\"]my text here[/color-box]</strong>"
+msgstr ""
+
+#: scbb.php:162 scbb.php:209
+msgid "The name of the parameter"
+msgstr ""
+
+#: scbb.php:162 scbb.php:209
+msgid "Parameter Name"
+msgstr ""
+
+#: scbb.php:163 scbb.php:210
+msgid "Is this parameter required?"
+msgstr ""
+
+#: scbb.php:163 scbb.php:210
+msgid "Is Required?"
+msgstr ""
+
+#: scbb.php:164 scbb.php:211
+msgid "What data type this parameter accepts"
+msgstr ""
+
+#: scbb.php:164 scbb.php:211
+msgid "Data Type"
+msgstr ""
+
+#: scbb.php:165 scbb.php:212
+msgid "What, if any, is the default if no value is specified"
+msgstr ""
+
+#: scbb.php:165 scbb.php:212
+msgid "Default Value"
+msgstr ""
+
+#: scbb.php:178 scbb.php:225
+msgid "Yes"
+msgstr ""
+
+#: scbb.php:181 scbb.php:228
+msgid "No"
+msgstr ""
+
+#: scbb.php:188 scbb.php:235
+msgid "true"
+msgstr ""
+
+#: scbb.php:191 scbb.php:238
+msgid "false"
+msgstr ""
+
+#: scbb.php:194 scbb.php:241
+msgid "this value is blank by default"
+msgstr ""
+
+#: scbb.php:254 scbb.php:589
+msgid "Documentation"
+msgstr ""
+
+#: scbb.php:255 scbb.php:590
+msgid "FAQ"
+msgstr ""
+
+#: scbb.php:256
+msgid "If you like this plugin, please "
+msgstr ""
+
+#: scbb.php:258
+msgid "rate it on WordPress.org"
+msgstr ""
+
+#: scbb.php:260
+msgid "and click the "
+msgstr ""
+
+#: scbb.php:262
+msgid "Works"
+msgstr ""
+
+#: scbb.php:264
+msgid "button. For support please visit the "
+msgstr ""
+
+#: scbb.php:266
+msgid "forums"
+msgstr ""
+
+#: scbb.php:317 scbb.php:440 scbb.php:445 scbb.php:528
+msgid ""
+"plugin is disabled. Either you did not pass a necessary setting to the "
+"plugin, or did not configure a default. Check Settings page."
+msgstr ""
+
+#: scbb.php:384
+msgid ""
+"is disabled. Either you did not pass a necessary setting to the plugin, or "
+"did not configure a default. Check Settings page."
+msgstr ""
+
+#: scbb.php:548
+msgid "is currently disabled."
+msgstr ""
+
+#: scbb.php:576
+msgid "Settings"
+msgstr ""
+
+#: scbb.php:588
+msgid "Support"
+msgstr ""
