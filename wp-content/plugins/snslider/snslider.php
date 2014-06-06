@@ -62,7 +62,7 @@ if(!class_exists('snslider'))
         // Add the settings link to the plugins page
         function plugin_settings_link($links)
         {
-            $settings_link = '<a href="options-general.php?page=Slimmernetwerken">Settings</a>';
+            $settings_link = '<a href="options-general.php?page=Slimmernetwerk">Settings</a>';
             array_unshift($links, $settings_link);
             return $links;
         }

@@ -8,12 +8,17 @@ if(!class_exists('Post_Type_SN'))
     {
         const POST_TYPE = "slider_post";
         private $_meta  = array(
-            'fase',
             'jaar',
             'opdrachtgever',
             'trekker',
-            'quote'
-        );
+            'quote',
+            'fase_verbreden',
+            'fase_evalueren',
+            'fase_experimenteren',
+            'fase_adopteren',
+            'fase_schetsen',
+            'fase_initieren'
+         );
 
         /**
          * The Constructor

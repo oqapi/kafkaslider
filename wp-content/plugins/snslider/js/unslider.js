@@ -105,11 +105,19 @@
                     _.r && clearTimeout(_.r);
 
                     _.r = setTimeout(function() {
-                        var styl = {height: li.eq(_.i).outerHeight()},
-                            width = el.outerWidth();
+                        var styl = {height: li.eq(_.i).outerHeight()};
+//                            width = el.outerWidth();
+if ($( window ).width() >= 1000){
+    width = 975;
+} else if ($( window ).width() >= 700){
+    width = 700;
+} else {
+    width = 480;
+}
 
                         ul.css(styl);
-                        styl['width'] = Math.min(Math.round((width / el.parent().width()) * 100), 100) + '%';
+//                        styl['width'] = Math.min(Math.round((width / el.parent().width()) * 100), 100) + '%';
+                        styl['width'] = width + 'px';
                         el.css(styl);
                         li.css({ width: width + 'px' });
                     }, 50);
@@ -155,7 +163,9 @@
 
             if (!ul.queue('fx').length) {
                 //  Handle those pesky dots
-                el.find('.dot').eq(index).addClass('active').siblings().removeClass('active');
+//                el.find('.dot').eq(index).addClass('active').siblings().removeClass('active');
+                $('.dot').removeClass('active');
+                $('.dot'+index).addClass('active');
 
                 el.animate(obj, speed, easing) && ul.animate($.extend({left: '-' + index + '00%'}, obj), speed, easing, function(data) {
                     _.i = index;
@@ -192,7 +202,7 @@
             if (name == 'dot') {
                 html = '<ol class="dots">';
                     $.each(_.li, function(index) {
-                        html += '<li class="' + (index == _.i ? name + ' active' : name) + '">' + ++index + '</li>';
+                        html += '<li class="' + (index == _.i ? name + ' active' : name) + ' ' + name + index + '">' + ++index + '</li>';
                     });
                 html += '</ol>';
             } else {

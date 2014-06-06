@@ -24,20 +24,38 @@ h2 {
 
 .banner {
     position: relative;
-    width: 975px;
     margin-left: auto;
     margin-right: auto;
     overflow: auto;
     box-shadow: 0 1px 2px rgba(0,0,0,.25);
 }
+
+.unslider-arrow {
+    display: block;
+    position: absolute;
+    height: 99px;
+    width: 22px;
+    padding: 0;
+    margin: 0;
+}
+
+.next {
+    right: 0;
+    background: url(../img/right.png) no-repeat center right;
+}
+.prev {
+    left: 0;
+    background: url(../img/left.png) no-repeat center left;
+}
+
 .banner ul {
     list-style: none;
-    width: 300%;
+    padding: 0;
+    margin: 0;
 }
 .banner ul li {
     display: block;
     float: left;
-    width: 33%;
     -o-background-size: 100% 100%;
     -ms-background-size: 100% 100%;
     -moz-background-size: 100% 100%;
@@ -52,14 +70,11 @@ h2 {
     height: 10px;
     margin: 7px;
     text-indent: -999em;
-    /*border: 2px solid #fff;
-     border-radius: 6px; */
-
     cursor: pointer;
-    opacity: .4;
     -webkit-transition: background .5s, opacity .5s;
     -moz-transition: background .5s, opacity .5s;
     transition: background .5s, opacity .5s;
+    background: #FFFFFF;
 }
 .banner .dots li.active {
     opacity: 1;
@@ -77,15 +92,11 @@ h2 {
     cursor: pointer;
 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) , (max-width: 900px) {
-}
-
 /* >800 */
 
 .header {
     background-size: 100%;
     float: left;
-    width: 975px;
     height: 300px;
 }
 
@@ -93,7 +104,6 @@ h2 {
     float: left;
     background: #000000;
     color: blue;
-    margin-left: 170px;
     margin-top: 10px;
     font-weight: bolder;
     font-size: 30px;
@@ -105,8 +115,8 @@ h2 {
     width: 100%;
     clear: both;
 }
-.quote {
 
+.quote {
     float: left;
     background: #FFFFFF;
     color: #000000;
@@ -114,11 +124,10 @@ h2 {
     margin-top: 90px;
     font-size: 20px;
     padding: 7px;
-    width: 400px;
     opacity: 0.6;
     filter: alpha(opacity=60); /* For IE8 and earlier */
     line-height: 20px;
-    font-style:italic;
+    font-style: italic;
 }
 
 .headertitle {
@@ -136,14 +145,13 @@ h2 {
 .text {
     background-color: #F7F7F7;
     float: right;
-    width: 795px;
-    height: 150px;
     margin-top: 5px;
     margin-bottom: 10px;
     margin-left: 10px;
     margin-right: 10px;
     color: #000000;
     padding: 7px;
+    overflow: auto;
 }
 
 .jaar {
@@ -176,7 +184,6 @@ h2 {
 
 .selects {
     float: right;
-    background-color: #FF0000;
     width: 230px;
     height: 25px;
     margin-right: 10px;
@@ -186,7 +193,6 @@ h2 {
 .banner .dots {
     background: #B1B1B1;
     float: right;
-    width: 565px;
     height: 25px;
     margin-left: 10px;
     margin-bottom: 10px;
@@ -196,23 +202,310 @@ h2 {
     height: 195px;
 }
 
+.fases div {
+    height: 30px;
+    color: #D0D0D0;
+    background: url(../img/fase.png) no-repeat -5px 5px;
+    padding-left: 30px;
+    font-size: 16px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.fases div:hover {
+    background: url(../img/fase_hover.png) no-repeat -5px 5px;
+}
+
+.fases div.divider {
+    height: 15px;
+    background-image: none;
+}
+
+.fases div.selected {
+    background: url(../img/fase_selected.png) no-repeat -5px 2px;
+}
+
+.fases div.done {
+    color: #FFFFFF;
+    background: url(../img/fase_done.png) no-repeat -5px 2px;
+}
+
 .links {
     height: 90px;
-    background: url(../img/nav.png) no-repeat left top;
+    background: url(../img/nav.png) no-repeat 10px 3px;
 }
 
 .links div {
-    height: 33%;    
+    height: 33%;
     line-height: 30px;
     margin-left: 50px;
 }
 
-.links a{
+.links a {
     color: #000000;
-    text-decoration:none;
+    text-decoration: none;
 }
 
-.links a:hover{
+.links a:hover {
     color: #FFFFFF;
-    text-decoration:none;
+    text-decoration: none;
 }
+
+.fase_verbreden {
+    display: none;
+}
+.fase_evalueren {
+    display: none;
+}
+.fase_experimenteren {
+    display: none;
+}
+.fase_adopteren {
+    display: none;
+}
+.fase_schetsen {
+    display: none;
+}
+.fase_initieren {
+
+}
+
+/*** Nice drop downs ***/
+
+.banner ul.dropdown {
+    width: inherit;
+    z-index: 99;
+    height: auto;
+}
+
+.banner ul.dropdown li {
+    width: inherit;
+    z-index: 99;
+}
+
+.select_jaar {
+    width: 80px;
+}
+
+.select_fase {
+    width: 130px;
+}
+
+.nice_select {
+    /* Size and position */
+    float: right;
+    position: relative;
+    margin: 0 auto;
+    padding: 2px;
+    margin: 3px;
+    /* Styles */
+    background: #fff;
+    cursor: pointer;
+    outline: none;
+    /* Font settings */
+    font-weight: bold;
+    color: #8AA8BD;
+}
+
+.nice_select:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    right: 2px;
+    top: 50%;
+    margin-top: -3px;
+    border-width: 6px 6px 0 6px;
+    border-style: solid;
+    margin-left: 5px;
+}
+
+.nice_select .dropdown {
+    /* Size & position */
+    position: absolute;
+    top: 140%;
+    left: 0;
+    right: 0;
+    /* Styles */
+    background: white;
+    font-weight: normal;
+    -webkit-transition: all 0.5s ease-in;
+    -moz-transition: all 0.5s ease-in;
+    -ms-transition: all 0.5s ease-in;
+    -o-transition: all 0.5s ease-in;
+    transition: all 0.5s ease-in;
+    list-style: none;
+    /* Hiding */
+    opacity: 0;
+}
+
+.nice_select .dropdown:after {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    right: 15px;
+}
+
+.nice_select .dropdown:before {
+    content: "";
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: 100%;
+    right: 13px;
+}
+
+.nice_select .dropdown li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.nice_select .dropdown li i {
+    float: right;
+    color: inherit;
+}
+
+.nice_select .dropdown li:first-of-type a {
+}
+
+.nice_select .dropdown li:last-of-type a {
+    border: none;
+}
+
+/* Hover state */
+
+.nice_select .dropdown li:hover a {
+}
+
+/* Active state */
+
+.nice_select.active .dropdown {
+    opacity: 1;
+}
+
+/* No CSS3 support */
+
+.no-opacity       .nice_select .dropdown, .no-pointerevents .nice_select .dropdown {
+    display: none;
+    opacity: 1; /* If opacity support but no pointer-events support */
+}
+
+.no-opacity       .nice_select.active .dropdown, .no-pointerevents .nice_select.active .dropdown {
+    display: block;
+}
+
+/** max screen **/
+@media only screen and (min-width: 1000px) {
+    .banner {
+        width: 975px;
+    }
+    
+    .title{
+        margin-left: 170px;
+    }
+
+    .unslider-arrow {
+        top: 225;
+    }
+
+    .header {
+        width: 975px;
+    }
+
+    .quote {
+        width: 400px;
+        margin-left: 170px;
+    }
+
+    .text {
+        width: 795px; 
+        max-width: 795px;
+        height: 225px;
+        max-height: 225px;
+    }
+
+    .banner .dots {
+        width: 565px;
+    }
+}
+
+/** medium screen **/
+@media only screen and (min-width: 700px) and (max-width: 1000px) {
+    .banner {
+        width: 700px;
+    }
+
+    .unslider-arrow {
+        top: 225;
+    }
+
+    .title{
+        margin-left: 170px;
+    }
+
+    .header {
+        width: 700px;
+    }
+
+    .quote {
+        width: 400px;
+        margin-left: 170px;
+    }
+
+    .text {
+        width: 520px;
+        max-width: 520px;
+        height: 260px;
+        max-height: 260px;
+    }
+
+    .banner .dots {
+        width: 450px;
+    }
+}
+
+/** min screen **/
+@media only screen and (max-width: 700px) {
+    .banner {
+        width: 480px;
+    }
+
+    .unslider-arrow {
+        top: 225;
+    }
+
+    .title{
+        margin-left: 10px;
+    }
+
+    .header {
+        width: 480px;
+    }
+
+    .quote {
+        width: 400px;
+        margin-left: 10px;
+    }
+
+    .text {
+        width: 460px;
+        max-width: 460px;
+        height: 260px;
+        max-height: 260px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .banner .dots {
+        width: 230px;
+    }
+}
+

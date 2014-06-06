@@ -12,11 +12,11 @@
     } else {
         //Normal page display
         $title = get_option('snslider_title');
-        $base_color = get_option('snslider_base_color');
+        $base_color = get_option('snslider_base_color','#81CFF4');
     }
 ?>
 <div  class="wrap">
-    <h2>Slimmernetwerken</h2>
+    <h2>Slimmernetwerk</h2>
     <form name="snslider_form" method="post" action="<?php echo str_replace( '%7E', '~', $_SERVER['REQUEST_URI']); ?>">
         <input type="hidden" name="snslider_hidden" value="Y">
         <h4>Instellingen</h4>
